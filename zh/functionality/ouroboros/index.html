@@ -1,0 +1,571 @@
+
+
+
+
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="origin">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#80eeff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Ouroboros is a new proof of stake algorithm used by the Cardano protocol.">
+
+  <meta name="google-site-verification" content="oxDOpGeoTc-h4muKvrrV8a-_U5YMiD0pTLWb_UTUoxc">
+
+  <meta property="og:locale" content="zh">
+  <meta property="og:url" content="https://cardano.org/zh/functionality/ouroboros/index.html">
+  <meta property="og:title" content="Ouroboros">
+  <meta property="og:description" content="Ouroboros is a new proof of stake algorithm used by the Cardano protocol."/>
+
+  <meta property="og:image" content="/icons/app.png">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@cardanocom">
+
+  <link rel="preload" href="/assets/fonts/plexserif-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/plexsans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="manifest" href="/app.webmanifest" type="application/manifest+json">
+  <link rel="stylesheet" href="/assets/app.css">
+  <link rel="mask-icon" href="/assets/vectors/icon.svg" color="#80eeff">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/ico">
+  <link rel="apple-touch-icon" href="/icons/app.png" type="image/png">
+  <link rel="stylesheet" href="/assets/app.css">
+
+  <link rel="alternate" hreflang="en" href="https://cardano.org/en">
+
+
+  <link rel="alternate" hreflang="zh" href="https://cardano.org/zh">
+
+
+  <link rel="alternate" hreflang="ja" href="https://cardano.org/ja">
+
+
+  <link rel="alternate" hreflang="ko" href="https://cardano.org/ko">
+
+
+  <script src="/assets/app.js" defer></script>
+
+  <script src="https://www.googletagmanager.com/gtag/js?id=UA-101007627-3" async></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-101007627-3');
+  </script>
+
+  <title>Ouroboros • Cardano</title>
+</head>
+
+<body class="t-cardano">
+  <header class="c-banner">
+  <div class="c-banner__container">
+    <div class="c-banner__logo">
+      <a href="/zh/" rel="home">
+        <svg width="128" height="40" role="img" aria-label="Cardano">
+          <use xlink:href="/assets/vectors/logo.svg#cardano"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="c-locales" aria-labelledby="locales__toggle">
+  <button class="c-locales__toggle" id="locales__toggle" aria-controls="locales__menu" aria-expanded="true">
+    <span class="u-hidden">选择你的语言</span>
+    <span class="c-locales__current" aria-hidden="true">zh</span>
+  </button>
+  <ul class="c-locales__menu" id="locales__menu">
+  
+    <li class="c-locales__menuitem">
+      <a href="/en/" hreflang="en-US" lang="en">English</a>
+    </li>
+  
+    <li class="c-locales__menuitem">
+      <a href="/zh/" hreflang="zh-CN" lang="zh">简体中文</a>
+    </li>
+  
+    <li class="c-locales__menuitem">
+      <a href="/ja/" hreflang="ja-JP" lang="ja">日本語</a>
+    </li>
+  
+    <li class="c-locales__menuitem">
+      <a href="/ko/" hreflang="ko-KO" lang="ko">한국어/韓國語</a>
+    </li>
+  
+  </ul>
+</nav>
+
+    <nav class="c-navigation" aria-label="Navigation">
+  <ul class="c-navigation__items">
+  
+    <li class="c-navigation__item">
+      <a href="/zh/vision/">Vision</a>
+    </li>
+  
+    <li class="c-navigation__item">
+      <a href="/zh/functionality/">Functionality</a>
+    </li>
+  
+    <li class="c-navigation__item">
+      <a href="/zh/transparency/">Transparency</a>
+    </li>
+  
+    <li class="c-navigation__item">
+      <a href="/zh/news/">News &amp; Opinion</a>
+    </li>
+  
+    <li class="c-navigation__item">
+      <a href="/zh/community/">社区</a>
+    </li>
+  
+    <li class="c-navigation__item">
+      <a href="/zh/developers/">Developers</a>
+    </li>
+  
+    <li class="c-navigation__item">
+      <a href="/zh/media/">Media Enquiries</a>
+    </li>
+  
+    <li class="c-navigation__item">
+      <a href="/zh/help/">Help &amp; Support</a>
+    </li>
+  
+    <li class="c-navigation__item">
+      <a href="/zh/ada/">Ada Token</a>
+    </li>
+  
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+      
+      <nav class="c-breadcrumb">
+        <div class="c-breadcrumb__items">
+          <p class="c-breadcrumb__item">
+            <a href="/zh/functionality/">Functionality</a>
+          </p>
+        </div>
+      </nav>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+  <main class="c-main l-article">
+    
+  
+    <header class="c-introduction">
+  <div class="c-introduction__container">
+    <h1 class="c-introduction__title">
+      <svg class="c-introduction__icon" height="80" width="80" role="img" aria-hidden="true">
+        <use xlink:href="/assets/vectors/icons.svg#ouroboros"></use>
+      </svg>
+      Ouroboros
+    </h1>
+    
+    <div class="c-introduction__description">
+      <p>Ouroboros is a new proof of stake algorithm used by the Cardano protocol.</p>
+
+    </div>
+    
+  </div>
+</header>
+
+  
+
+  
+    <div class="c-content">
+  <div class="s-linear">
+    <h2>Why have we created Ouroboros?</h2>
+<ul>
+<li>The algorithm is a crucial part of the infrastructure that supports the Ada cryptocurrency and is a major innovation in blockchain technology.</li>
+<li>Ouroboros eliminates the need for an energy-hungry proof of work protocol, which stands as a barrier to blockchain scaling up for much wider use.</li>
+<li>It’s a provably secure system comparable to that of Bitcoin’s blockchain, which has never been compromised.</li>
+<li>It’s peer reviewed by scientists, academics and engineers to make sure that it lorem ipsum doler emit. Our paper ‘Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol’ was accepted at Crypto 2017, the leading cryptography conference.</li>
+</ul>
+<h2>What is a proof of stake algorithm?</h2>
+<p>Cardano uses a new proof of stake algorithm called Ouroboros to determine how individual nodes reach consensus about the network.</p>
+<p>In proof of work, miners invest computing power to compete to be chosen as the leader who gets to make the next block and win a reward for doing so. By contrast, in proof of stake, the stakeholder who will form the next block is randomly selected, proportionally to the size of the stake that they have, according to the blockchain ledger.</p>
+<p data-embed=""><a href="https://www.youtube.com/watch?v=Nlmv4fg4NQk">Watch an IOHK presentation at Oxford University about Ouroboros</a></p>
+<h2>Why is it so different from what existed before?</h2>
+<p>In proof of work, miners invest computing power to compete to be chosen as the leader who gets to make the next block and win a reward for doing so.</p>
+<p>By contrast, in proof of stake, the stakeholder who will form the next block is randomly selected, proportionally to the size of the stake that they have, according to the blockchain ledger.</p>
+<p>There have been a number of attempts by other cryptocurrencies to develop a proof of stake algorithm, although these protocols have suffered from flaws and have not been shown to be provably secure.</p>
+<h2>Who is behind this?</h2>
+<p>Ouroboros was designed a team led by IOHK Chief Scientist, Professor Aggelos Kiayias.</p>
+<h2>Where can I find more information?</h2>
+<ul>
+<li><a href="#">Cardano Settlement Layer Documentation - Ouroboros Proof of Stake Algorithm</a></li>
+<li><a href="#">Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol</a></li>
+</ul>
+
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+
+  </main>
+
+  <footer class="c-contentinfo">
+  <div class="c-contentinfo__container">
+    <div class="c-contentinfo__main">
+      <div class="c-communities">
+  <h2 class="c-communities__title">加入社区</h2>
+  <ul class="c-communities__items">
+  
+    <li class="c-communities__item">
+      <a href="https://forum.cardano.org/c/japanese" rel="me">
+        <svg height="32" width="32" role="img" aria-hidden="true">
+          <use xlink:href="/assets/vectors/social.svg#forum"></use>
+        </svg>
+        フォーラム
+      </a>
+    </li>
+  
+    <li class="c-communities__item">
+      <a href="https://chat.cardano.org" rel="me">
+        <svg height="32" width="32" role="img" aria-hidden="true">
+          <use xlink:href="/assets/vectors/social.svg#chat"></use>
+        </svg>
+        チャット
+      </a>
+    </li>
+  
+    <li class="c-communities__item">
+      <a href="https://twitter.com/cardanocom" rel="me">
+        <svg height="32" width="32" role="img" aria-hidden="true">
+          <use xlink:href="/assets/vectors/social.svg#facebook"></use>
+        </svg>
+        Facebook
+      </a>
+    </li>
+  
+    <li class="c-communities__item">
+      <a href="https://twitter.com/cardanocom" rel="me">
+        <svg height="32" width="32" role="img" aria-hidden="true">
+          <use xlink:href="/assets/vectors/social.svg#twitter"></use>
+        </svg>
+        Twitter
+      </a>
+    </li>
+  
+    <li class="c-communities__item">
+      <a href="https://reddit.com/r/cardano/" rel="me">
+        <svg height="32" width="32" role="img" aria-hidden="true">
+          <use xlink:href="/assets/vectors/social.svg#reddit"></use>
+        </svg>
+        Reddit
+      </a>
+    </li>
+  
+    <li class="c-communities__item">
+      <a href="https://youtube.com/channel/UCbQ9vGfezru1YRI1zDCtTGg" rel="me">
+        <svg height="32" width="32" role="img" aria-hidden="true">
+          <use xlink:href="/assets/vectors/social.svg#youtube"></use>
+        </svg>
+        YouTube
+      </a>
+    </li>
+  
+  </ul>
+</div>
+
+      <section class="c-item c-item--newsletter">
+  <header class="c-item__header">
+    <h3 class="c-item__title">Stay up to date</h3>
+    <p class="c-item__description">Subscribe to the Cardano Foundation newsletter for the latest updates, news and events</p>
+  </header>
+  <div class="c-item__main">
+    <form class="c-form c-form--inline c-form--newsletter">
+  <div class="c-form__field">
+    <label class="c-form__label" for="newsletter-email">电子邮件地址</label>
+    <input class="c-form__input" id="newsletter-email" type="email" placeholder="name@domain.com" required>
+  </div>
+  <div class="c-form__field">
+    <label class="c-form__label" for="newsletter-lang">选择你的语言</label>
+    <select class="c-form__select" id="newsletter-lang" required>
+      <option value="en">English</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어/韓國語</option>
+      <option value="hi">हिन्दी</option>
+      <option value="zh">简体中文</option>
+      <option value="ru">русский язык</option>
+      <option value="vi">tiếng Việt</option>
+      <option value="zh-Hant">正體字</option>
+      <option value="ara">العَرَبِيَّة</option>
+    </select>
+  </div>
+  <div class="c-form__field">
+    <button class="c-button">订阅</button>
+  </div>
+</form>
+
+  </div>
+</section>
+
+    </div>
+
+    <p class="c-contentinfo__legal">
+      <small>&#169; 2018 Cardano Foundation. All rights reserved. <a href="/zh/legal/">法律</a></small>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

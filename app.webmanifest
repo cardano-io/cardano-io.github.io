@@ -1,0 +1,14 @@
+{
+  "lang": "",
+  "name": "Cardano",
+  "short_name": "Cardano",
+  "icons": [{
+    "src": "app.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "theme_color": "#80eeff",
+  "background_color": "#013",
+  "display": "minimal-ui",
+  "start_url": "./"
+}
