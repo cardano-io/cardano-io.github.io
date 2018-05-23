@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+  
+  
+  <head>
+<title>卡尔达诺的交易手续费如何运用？</title>
+<meta charset="utf-8">
+
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+
+<meta name="twitter:card" content="卡尔达诺的交易手续费如何运用？">
+<meta name="twitter:site" content="卡尔达诺的交易手续费如何运用？">
+<meta name="twitter:creator" content="Cardano">
+<meta name="twitter:image" content="/images/iohk-share-logo.jpg">
+<meta name="twitter:title" content="卡尔达诺的交易手续费如何运用？">
+<meta name="twitter:description" content="">
+
+<meta property="og:title" content="卡尔达诺的交易手续费如何运用？" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/press/how-cardano-transaction-fees-work/" />
+<meta property="og:image" content="/images/iohk-share-logo.jpg" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="卡尔达诺的交易手续费如何运用？" />
+
+
+<script>(function(){document.documentElement.className='js'})();</script>
+<script>
+var lowie = false;
+var lowerie = false;
+</script>
+
+
+<link rel="shortcut icon" type="image/png" href="/images/apple-icon.png?v=1"/>
+
+<link rel="stylesheet" href="/css/app.0.3.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/base.0.2.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/cf.0.0.391.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/main.css?v=3" type="text/css" media="all" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" type="text/css" media="all" />
+
+<link hreflang="en" href="/" rel="alternate" />
+<link hreflang="ja" href="/ja/" rel="alternate" />
+<link hreflang="x-default" href="/" rel="alternate" />
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/bs.js"></script>
+<script type="text/javascript" src="/js/functions.0.3.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="/js/custom.js?v=9"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-101007627-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+  <body class="how-cardano-transaction-fees-work page-sidebar blog">
+    
+
+<div id="page" class="page how-cardano-transaction-fees-work ">
+<header class="header">
+  <div id="navbar" class="navbar navbar-top navbar-default  border0" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-24 col-md-24 text-center">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navhider" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/cn/">
+              <div>
+                <img src="/images/header-logo-new.png" alt="logo" class="top-logo" height="55"> 
+              </div>
+            </a>
+          </div>
+          <div id="navhider" class="collapse navbar-collapse ">
+            
+<ul id="menu-top" class="nav navbar-nav navbar-right uppercase">
+  <li class="about "><a href="/cn/project/">项目</a></li>
+  <li class="protocol "><a href="/cn/protocol/">协议</a></li>
+  <li class="foundation "><a href="/cn/foundation/">关于基金会</a></li>
+  <li class="learn-more "><a href="/cn/learn-more/">了解更多</a></li>
+  <!-- <li class="faq "><a href="/faq/">FAQ</a></li> -->
+  <li class="blog "><a href="/cn/blog">博客</a></li>
+  <li>
+    <!-- <div class="lang_switch" style="padding-top: 28px;">
+      <a href="/press/how-cardano-transaction-fees-work/" class="en" title="English">
+      <span class="none">English</span>
+      <img src="/images/flags/en.png" width="19" height="14" alt="" />
+      </a>
+      <a href="/ja/press/how-cardano-transaction-fees-work/" class="ja" title="日本語">
+      <span class="none">日本語</span>
+      <img src="/images/flags/ja.png" width="19" height="14" alt="" />
+      </a>
+    </div> -->
+
+    <select class="select-language hidden" data-width="fit">
+      <option data-content='<span class="flag-icon flag-icon-us"></span> English' value="en">English</option>
+      <option  data-content='<span class="flag-icon flag-icon-jp"></span> 日本語' value="ja">日本語</option>
+      <option  data-content='<span class="flag-icon flag-icon-cn"></span> 中文' value="cn">中文</option>
+    </select>
+  </li>
+  <input type="hidden" id="language" value="cn">
+  <input type="hidden" id="default-url" value="/press/how-cardano-transaction-fees-work/">
+  <a href="/press/how-cardano-transaction-fees-work/" class="hidden" id="en-url"></a>
+  <a href="/ja/press/how-cardano-transaction-fees-work/" class="hidden" id="ja-url"></a>
+  <a href="/cn/press/how-cardano-transaction-fees-work/" class="hidden" id="cn-url"></a>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</header>
+      <article class="" itemscope itemtype="http://schema.org/BlogPosting">
+        <div id="main-body">
+          <div class="container">
+            <div class="row">
+              <div class="blogpost col-lg-18 col-md-18">
+                <div class="post-img">
+                  <div class="absolute">
+                    <div class="date">
+                      <span class="">10/20/2017</span>
+                    </div>
+                    <h1 class="title">卡尔达诺的交易手续费如何运用？</h1>
+                    <h2 class="sub-title"></h2>
+                  </div>
+                  <img src="/images/blog/blog-5.jpg" alt="">
+                </div>
+                <div class="post">
+                  <h3 id="section">为什么我们需要交易手续费？</h3>
+
+<p>如同卡尔达诺般的加密货币需要交易手续费的原因主要有两项：</p>
+
+<p>对于负责运行完整卡尔达诺节点的参与者所花费的时间、金钱和精力以顺利运行协议，为此应该给予补偿和奖励。与比特币相反，比特币在每个开采区域创建新货币，然而在卡尔达诺协议中，交易手续费用是协议参与者的唯一收入来源。<!--break--></p>
+
+<p>需要交易手续费用的第二个原因是防止分散式阻断服务攻击（DDoS attacks）。在分散式阻断服务攻击中，若攻击者试图通过虚拟交易来淹没网络，那么攻击者则需要支付足够金额的交易手续费以完成这些虚拟交易，如此一来，这种攻击方式对攻击者来说将变得非常昂贵。</p>
+
+<h3 id="section-1">如何运用交易手续费？</h3>
+
+<p>每当持有者想要转移一定数量的Ada时，系统都会为此交易计算出一个最低的费用金额。为了认证该转移为有效交易，那么这笔最低的交易手续费应该包含在内（依照发送者愿意，他也可以支付更高额的手续费)。所有的交易手续费用被汇集于一个虚拟池中，然后再分发给卡尔达诺协议的参与者。</p>
+
+<h3 id="section-2">如何计算出最低金额的交易手续费？</h3>
+<p>最低金额的交易手续费按照公式计算</p>
+
+<p>a + b×大小 (a + b × size),
+其中’a’和’b’是常数，’规模(size)’是以Bytes为单位的交易规模。例如，常数“a”和“b”具有这些值</p>
+
+<p>a = 0.155381 ADA,
+b = 0.000043946 ADA/Byte.
+这意味着每笔交易的所需成本至少为0.155381ADA，另外加上交易规模每Byte所消耗的成本为0.000043946Ada。例如，规模为200Byte的交易（相当典型的规模）成本计算：</p>
+
+<p>0.155381 ADA + 0.000043946 ADA/Byte × 200 Byte = 0.1641702 ADA.
+为什么选择这个特定的公式？ - 设定参数’a’的原因是防止在上述提到的分散式阻断服务攻击：即使是一个规模非常小的虚拟交易，都应该对试图发动上千个攻击的攻击者收取足够额度的交易手续费，以达到反击效果。引入参数“b”的理由是反映实际运行交易所需要的成本：存储规模较大的交易比起存储规模较小的交易需要更多的电脑内存，因此规模较大的交易所支付的手续费用也应该比规模较小的交易来得多。</p>
+
+<p>为了获取参数’a’和’b’的特定值，我们不得不回答下列这些问题：</p>
+
+<p>电脑内存的一个Byte耗费多少？
+每秒平均有多少笔的交易量？
+平均一笔交易的规模有多大？
+运行完整节点需要多少费用？
+在卡尔达诺运行之前，我们不得不先以估算方式回答些问题以取得答案。至今，卡尔达诺已经正式启动运行，意味着我们将能够收集更多统计数据来找到更准确的答案。这也意味着“a”和“b”的数值在将来可能会进行调整，以便更贴切地反映实际运行交易所需要的成本。</p>
+
+<p>我们甚至计划在最终提出一个以市场驱动的方式动态来调整这些常数的方案，以便不需要人为干预来对流量和运营成本的变化进行操控反应。如何实现这方案正是我们积极研究的一项重点。</p>
+
+<h3 id="section-3">费用如何分配？</h3>
+<p>给定“纪元”的所有交易手续费用都将汇集在一个虚拟池中，这个想法是将虚拟池中的货币重新分配给通过在纪元期间的权益证明算法和区块创建之间被选为“插槽领导者”的参与者。</p>
+
+<p>现阶段的卡尔达诺，所有区块皆由IOHK和我们的合作伙伴运营的节点创建，交易手续费已被汇集（以防止分散式阻断服务攻击），但是这些以被汇集的金额将不会被重新分配，而是被烧毁。</p>
+
+<p>一旦卡尔达诺迈进下一个完全分散的阶段，费用将按照上述方式重新分配。</p>
+
+<h3 id="section-4">下一步？</h3>
+<p>制定一个费用分配的坚强方案是非常具有挑战性的数学问题：我们如何奖励“良好”的行为，并且提高执行效率的同时惩罚“不良”行为和攻击？我们如何确保协议参与者获得公平的报酬，同时确保使用卡尔达诺赚钱的最佳方法是让系统尽可能的可靠和高效？诀窍是奖励保有“良好行为”的节点运营者，从而当系统以最佳性能运行时，获取最高的奖励。</p>
+
+<p>这些是被称为游戏理论的数学学科研究的问题，我们很自豪拥有着名的游戏理论学者同时也是Gödel奖获得者的牛津大学教授Elias Koutsoupias与我们一起寻找解决这个问题的办法。</p>
+
+                </div>
+                <i class="produce-text">This blog article has been produced by IOHK and syndicated by Cardano Foundation for wider distribution.</i>
+                <div id="disqus_thread"></div>
+<script>
+  /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+   */
+  
+  var disqus_config = function () {
+      this.page.url = "http://cardanofoundation.org/cn/press/how-cardano-transaction-fees-work/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "卡尔达诺的交易手续费如何运用？"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  
+  (function() {  // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://the-cardano-foundation.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              </div>
+              
+              <div class="col-lg-6 col-md-6 rightcol post-side">
+  <div class="profile">
+    
+    <p class="posted">POSTED BY:</p>
+    
+    <a href="" style="display: block;">
+      <div class="profile-img">
+        <img src="/images/authors/lars.jpg" alt="">
+      </div>
+      <h2>Lars Brünjes, PhD</h2>
+      <h3>Cardano SL Developer at IOHK</h4>
+    </a>
+
+    <div class="social">
+      
+      
+    </div>
+  </div>
+  <p class="latest">LATEST FROM AUTHOR</p>
+  
+  
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    <div>
+      <em class="fa fa-arrow-right"></em>
+      <div class="content">
+        <a href="/cn/press/how-cardano-transaction-fees-work/">卡尔达诺的交易手续费如何运用？</a>
+      </div>
+    </div>
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+</div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+    <section id="footer" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-24 col-md-24">
+        <div class="row">
+          <div class="col-md-6 col-xs-24">
+            <h4>欢迎加入卡尔达诺社区</h4>
+            <div class="social_icons" id="social_icons_home">
+              <a class="twitter" href="https://twitter.com/CardanoStiftung" target="_blank"><em class="fa fa-twitter"></em></a>
+              <a class="facebook" href="https://facebook.com/CardanoFoundation/" target="_blank"><em class="fa fa-facebook"></em></a>
+              <a class="reddit" href="https://reddit.com/r/cardano" target="_blank"><em class="fa fa-reddit"></em></a>
+              <a class="linkedin" href="https://www.linkedin.com/company-beta/11195856/" target="_blank"><em class="fa fa-linkedin"></em></a>
+              <a class="youtube" href="https://www.youtube.com/channel/UCbQ9vGfezru1YRI1zDCtTGg" target="_blank"><em class="fa fa-youtube-play"></em></a>
+              <a class="zoom-social_icons-list__link" href="https://chat.cardanohub.org/home" target="_blank" style="background: #fff;"><em class="fa fa-rocket" style="color:#c1272d;"></em></a>
+              <a class="zoom-social_icons-list__link" href="https://forum.cardanohub.org" target="_blank" style="background: #fff;">
+                <span class="zoom-social_icons-list-span dashicons dashicons-format-status" data-hover-rule="color" data-hover-color="#da7226" style="color : #da7226;font-size: 18px;padding:2px; vertical-align: middle;" data-old-color="rgb(255, 249, 174)"></span>
+              </a>
+            </div>
+            <p>
+              <a href="mailto:info@cardanofoundation.org">联系卡尔达诺</a>
+            </p>
+            <a href="https://cardanodocs.com">技术文档</a>
+          </div>
+
+          <div class="col-md-12 col-xs-24">
+            <h4>通讯</h4>
+            <p class="subscribe-to-our-new">订阅卡尔达诺通讯，获得所有基金会的最新信息。</p>
+            
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({ 
+    css: '',
+    portalId: '4268286',
+    formId: 'b9826147-5b89-4303-96de-2e46205a0aca'
+  });
+</script>
+
+<style type="text/css">
+  #label-firstname-b9826147-5b89-4303-96de-2e46205a0aca {
+    display: none;
+  }
+  #label-email-b9826147-5b89-4303-96de-2e46205a0aca, #label-language-b9826147-5b89-4303-96de-2e46205a0aca {
+    display: none;
+  }
+
+  .hs_firstname, .hs_email {
+    width: 49%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    /*font-size: 0;*/
+    max-width: 100%;
+  }
+
+  .hs_email {
+    float: right;
+  }
+
+  #email-b9826147-5b89-4303-96de-2e46205a0aca, #firstname-b9826147-5b89-4303-96de-2e46205a0aca {
+    width: 100%;
+    border: none;
+    background-color: #f7f7f7;
+    color: #a5a5a5!important;
+    font-family: Rubik;
+    font-size: 14.0px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  #language-b9826147-5b89-4303-96de-2e46205a0aca {
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    color: #5078BA;
+    background-color: #f7f7f7;
+    font-family: Rubik;
+    font-size: 14.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    display: inline-block;
+    height: 34px;
+    border-radius: 6px;
+    padding: 6px 11px;
+    line-height: 1.72857143;
+  }
+
+  .hs_language, .hs_error_rollup {
+    display: inline-block;
+    width: calc(100% - 135px);
+  }
+
+  .hs_submit {
+    width: 122px;
+    display: inline-block;
+  }
+
+  #footer form .hs_submit .hs-button {
+    width: 100%;
+    margin-left: 12px;
+    border: none;
+    background-color: #5079BB;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Rubik;
+    text-transform: uppercase;
+    border-radius: 6px;
+    line-height: 1.72857143;
+  }
+
+  .hs_error_rollup {
+    display: none;
+  }
+
+  .submitted-message {
+    text-align: center;
+  }
+</style>
+          </div>
+
+          <div class="col-md-6 col-xs-24" style="text-align: right;">
+            <img src="/images/footer-logo.png" alt="logo" style="margin-right: 10px;">
+            <img src="/images/footer-logo-text.png" height="" alt="Cardano Foundation">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-24">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      数据保护政策
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <ol>
+                    <li>个人资料应当公正合法地处理。</li>
+                    <li>个人资料应以一个或多个指定與合法的目的获得，不得以与该目的或不符这些目的任何方式进一步处理。</li>
+                    <li>个人资料应与处理的單一目的或多目的有关，足够、相关或不过度。</li>
+                    <li>个人资料应准确，并在必要时保持最新。</li>
+                    <li>为任何單一目的或多目的处理的个人资料不得超过为此單一目的或多目的所需的期间。</li>
+                    <li>个人资料按照有关法律规定的数据主体的权利进行处理。</li>
+                    <li>应采取适当的技术和组织措施，防止未经授权和非法处理个人资料，以及意外丢失或毁坏个人资料。</li>
+                    <li>个人资料不得转移到国家或地区，除非该国家或地区确保对处理个人资料的数据主体的权利和自由给予足够的保护。</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row copy-section">
+          <div class="col-xs-24">
+            <p class="copy-right">卡尔达诺基金会会于2016年9月13日在瑞士注册。卡尔达诺基金会的注册办事处：Cardano Stiftung，Gubelstrasse 11,6300 Zug，Switzerland。</p>
+            <p class="copy-right" style="text-transform: uppercase;">&copy;2017卡尔达诺基金会版权所有</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var trackcmp_email = "";
+    var trackcmp = document.createElement("script");
+    trackcmp.async = true;
+    trackcmp.type = "text/javascript";
+    trackcmp.src = "//trackcmp.net/visit?actid=251940219&e=" + encodeURIComponent(trackcmp_email) + "&r=" + encodeURIComponent(document.referrer) + "&u=" + encodeURIComponent(window.location.href);
+    var trackcmp_s = document.getElementsByTagName("script");
+    if (trackcmp_s.length) {
+        trackcmp_s[0].parentNode.appendChild(trackcmp);
+    } else {
+      var trackcmp_h = document.getElementsByTagName("head");
+      trackcmp_h.length && trackcmp_h[0].appendChild(trackcmp);
+    }
+  </script>
+</section>
+</div><!-- /#page -->
+
+<div class="modal fade noprint plainmodal" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="Videomodal">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="videoframe">
+          <iframe width="598" height="317" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade noprint plainmodal" id="iohk-modal" tabindex="-1" role="dialog" aria-labelledby="IOHK modal">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div id="iohk-modal-load"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  /*.hs-form-b9826147-5b89-4303-96de-2e46205a0aca_d5437811-dc0e-40a1-8859-c1462be81340 fieldset.form-columns-2 .input {
+    margin-right: 0px;
+  }
+  .hs-form-b9826147-5b89-4303-96de-2e46205a0aca_d5437811-dc0e-40a1-8859-c1462be81340.stacked label {
+    display: none;
+  }
+
+  .stacked label {
+    display: none!important;
+  }
+
+  .hs-error-msgs.inputs-list label {
+    display: block!important;
+  }*/
+</style>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4268286.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+  </body>
+</html>
+
