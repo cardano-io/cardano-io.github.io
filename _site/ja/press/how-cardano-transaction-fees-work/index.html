@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+  
+  
+  <head>
+<title>カルダノの取引手数料はどうなっているか</title>
+<meta charset="utf-8">
+
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+
+<meta name="twitter:card" content="カルダノの取引手数料はどうなっているか">
+<meta name="twitter:site" content="カルダノの取引手数料はどうなっているか">
+<meta name="twitter:creator" content="Cardano">
+<meta name="twitter:image" content="/images/iohk-share-logo.jpg">
+<meta name="twitter:title" content="カルダノの取引手数料はどうなっているか">
+<meta name="twitter:description" content="">
+
+<meta property="og:title" content="カルダノの取引手数料はどうなっているか" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/press/how-cardano-transaction-fees-work/" />
+<meta property="og:image" content="/images/iohk-share-logo.jpg" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="カルダノの取引手数料はどうなっているか" />
+
+
+<script>(function(){document.documentElement.className='js'})();</script>
+<script>
+var lowie = false;
+var lowerie = false;
+</script>
+
+
+<link rel="shortcut icon" type="image/png" href="/images/apple-icon.png?v=1"/>
+
+<link rel="stylesheet" href="/css/app.0.3.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/base.0.2.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/cf.0.0.391.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/main.css?v=3" type="text/css" media="all" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" type="text/css" media="all" />
+
+<link hreflang="en" href="/" rel="alternate" />
+<link hreflang="ja" href="/ja/" rel="alternate" />
+<link hreflang="x-default" href="/" rel="alternate" />
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/bs.js"></script>
+<script type="text/javascript" src="/js/functions.0.3.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="/js/custom.js?v=9"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-101007627-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+  <body class="how-cardano-transaction-fees-work page-sidebar blog">
+    
+
+<div id="page" class="page how-cardano-transaction-fees-work ">
+<header class="header">
+  <div id="navbar" class="navbar navbar-top navbar-default  border0" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-24 col-md-24 text-center">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navhider" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/ja/">
+              <div>
+                <img src="/images/header-logo-new.png" alt="logo" class="top-logo" height="55"> 
+              </div>
+            </a>
+          </div>
+          <div id="navhider" class="collapse navbar-collapse ">
+            
+<ul id="menu-top" class="nav navbar-nav navbar-right uppercase">
+  <li class="about "><a href="/ja/project/">事業内容</a></li>
+  <li class="protocol "><a href="/ja/protocol/">プロトコル</a></li>
+  <li class="foundation "><a href="/ja/foundation/">財団について</a></li>
+  <li class="learn-more "><a href="/ja/learn-more/">最新情報</a></li>
+  <!-- <li class="faq "><a href="/faq/">FAQ</a></li> -->
+  <li class="blog "><a href="/ja/blog">ブログ</a></li>
+  <li>
+    <!-- <div class="lang_switch" style="padding-top: 28px;">
+      <a href="/press/how-cardano-transaction-fees-work/" class="en" title="English">
+      <span class="none">English</span>
+      <img src="/images/flags/en.png" width="19" height="14" alt="" />
+      </a>
+      <a href="/ja/press/how-cardano-transaction-fees-work/" class="ja" title="日本語">
+      <span class="none">日本語</span>
+      <img src="/images/flags/ja.png" width="19" height="14" alt="" />
+      </a>
+    </div> -->
+
+    <select class="select-language hidden" data-width="fit">
+      <option data-content='<span class="flag-icon flag-icon-us"></span> English' value="en">English</option>
+      <option  data-content='<span class="flag-icon flag-icon-jp"></span> 日本語' value="ja">日本語</option>
+      <option  data-content='<span class="flag-icon flag-icon-cn"></span> 中文' value="cn">中文</option>
+    </select>
+  </li>
+  <input type="hidden" id="language" value="ja">
+  <input type="hidden" id="default-url" value="/press/how-cardano-transaction-fees-work/">
+  <a href="/press/how-cardano-transaction-fees-work/" class="hidden" id="en-url"></a>
+  <a href="/ja/press/how-cardano-transaction-fees-work/" class="hidden" id="ja-url"></a>
+  <a href="/cn/press/how-cardano-transaction-fees-work/" class="hidden" id="cn-url"></a>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</header>
+      <article class="" itemscope itemtype="http://schema.org/BlogPosting">
+        <div id="main-body">
+          <div class="container">
+            <div class="row">
+              <div class="blogpost col-lg-18 col-md-18">
+                <div class="post-img">
+                  <div class="absolute">
+                    <div class="date">
+                      <span class="">10/20/2017</span>
+                    </div>
+                    <h1 class="title">カルダノの取引手数料はどうなっているか</h1>
+                    <h2 class="sub-title"></h2>
+                  </div>
+                  <img src="/images/blog/blog-5.jpg" alt="">
+                </div>
+                <div class="post">
+                  <h3 id="section">なぜ取引手数料が必要なのか？</h3>
+
+<p>カルダノのような仮想通貨に取引手数料が必要になるのは主に二つ理由があります：</p>
+
+<p>プロトコルをうまく動くためにカルダノノードを運営ている人は時間、金銭と努力をかけているため、補償とインセンティブを与える必要があります。ビットコインでマイニングしてたブロックで新たな通貨が作られるとは対照的に、カルダノのプロトコル内の参加者の唯一の収入源が取引手数料になります。<!--break--></p>
+
+<p>取引手数料の二つ目の理由はDDoS（分散型サービス拒否）攻撃を防止するためにあります。DDoS攻撃では、加害者はネットワークをダミートランザクションで溢れさせようとします。このような攻撃が攻撃者にとってコストが高くなれば、それぞれのダミートランザクションのために高い料金を払う事が必要になり攻撃を断念するでしょう。</p>
+
+<h3 id="section-1">取引手数料はどのように機能するのか？</h3>
+<p>誰かがある量のAdaを送金したい時に、そのトランザクションのための手数料がいくらかかるか計算されます。取引を有効にするために、そのいくらかの手数料は含まれなければなりません（送金者が望めばもっと高い手数料を支払う事も自由です）。全ての手数料はバーチュアルプールに集められて、その後カルダノプロトコルの参加者達に分配されます。</p>
+
+<p>最小手数料はどのように計算されているのか？
+取引の最小手数料は公式によって計算されます。</p>
+
+<p>a + b × size,</p>
+
+<p>‘a’と’b’が定数であり、’size’はバイトでの取引トランザクションサイズを表します。今の所、定数の’a’と’b’は以下の値となっています。</p>
+
+<p>a = 0.155381 ADA,
+b = 0.000043946 ADA/Byte.</p>
+
+<p>これは最低0.155381ADAが掛かる事を意味しています。そして取引サイズ（バイト）ごとに追加コストとして0.000043946ADAが加算されます。例として、200バイト（一般的によくあるサイズ）の取引での手数料計算式は以下になります</p>
+
+<p>0.155381 ADA + 0.000043946 ADA/Byte × 200 Byte = 0.1641702 ADA.</p>
+
+<p>なぜこの定式公式を選んだのか？—’a’というパラメーターを持つ理由は上記の通りDDoS攻撃を防止するためです。どんなに小さなダミートランザクションでも、何千も生成していれば攻撃側を傷つけるには十分な手数料コストがかかるようになっています。パラメーター’b’は実際のコストを反映するために導入されています：小さい取引を保存するときよりも大きい取引を保存する時の方がコンピュータメモリーをより多く必要としますので、小さいものより大きい取引の方が高くなります。</p>
+
+<p>パラメーター’a’と’b’の値を特定するためにはこのような質問に答えなければなりませんでした。</p>
+
+<p>コンピューターメモリーの1バイトはどれくらい高いのか？
+取引は平均的にどれくらい大きいのか？
+フルノードを起動させるのにコストは幾ら掛かるのか？
+この質問に対して答えを推計しなければなりませんでしたが、今はカルダノが稼働しているので、統計を集めてより的確な答えを出す事が可能になります。つまり将来的には実施のコストをより良く反映するために’a’と’b’は調節されます。</p>
+
+<p>トラフィック及び運用コストに人の介入が必要とされないために、マーケット主導の方法で動的にこれらの定数を調節する方法を模索しています。これらを達成するのも我々の研究のうちに集中しています。</p>
+
+<h3 id="section-2">手数料はどう分配されるのか？</h3>
+<p>与えられた‘エポック’のすべての取引手数料はバーチュアルプール内に集められます。ブロックを作成しその‘エポック’でプルーフオブステークによって‘スロットリーダー’として選ばれた人々にそのプール内からお金を再分配するイメージになります。</p>
+
+<p>今のステージのカルダノでは、IOHKやパートナーによって操作されているノードによって作成されているブロックでは、手数料は集められるが（DDoSを防止するため）分散はされず、その代わり燃焼されます。</p>
+
+<p>カルダノが次の完全な非中央集権のステージを迎える時に、上記のように手数料は分配されます。</p>
+
+<h3 id="section-3">次は何か？</h3>
+<p>手数料分配のための堅実な方式はとても難関な数学の問題です。どうやって良い行動にインセンティブを与え、悪い行動や攻撃を罰するのを効率化するか？どうやってプロトコルに参加している人が公正な収入をを与えられるにはどうしたらいいか？また、カルダノ上でお金を稼ぐための最良の方法はシステムをできるだけ信頼性が高く効率的にすることです。方法としてはノード運営者のインセンティブを「共通の利益」とバランスを取り、システムが最適なパフォーマンスで起動している時に報酬が最高値となるようにします。</p>
+
+<p>この質問はゲーム理論という数学的な規律によって研究されていて、オックスフォード大学の著名なゲーム理論家でゲーデル受賞者であるイライアス コウツウーピアス博士と共にこの問題のソリューションを探しています。</p>
+
+                </div>
+                <i class="produce-text">This blog article has been produced by IOHK and syndicated by Cardano Foundation for wider distribution.</i>
+                <div id="disqus_thread"></div>
+<script>
+  /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+   */
+  
+  var disqus_config = function () {
+      this.page.url = "http://cardanofoundation.org/ja/press/how-cardano-transaction-fees-work/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "カルダノの取引手数料はどうなっているか"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  
+  (function() {  // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://the-cardano-foundation.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              </div>
+              
+              <div class="col-lg-6 col-md-6 rightcol post-side">
+  <div class="profile">
+    
+    <p class="posted">POSTED BY:</p>
+    
+    <a href="" style="display: block;">
+      <div class="profile-img">
+        <img src="/images/authors/lars.jpg" alt="">
+      </div>
+      <h2>Lars Brünjes, PhD</h2>
+      <h3>Cardano SL Developer at IOHK</h4>
+    </a>
+
+    <div class="social">
+      
+      
+    </div>
+  </div>
+  <p class="latest">LATEST FROM AUTHOR</p>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+    
+    
+    <div>
+      <em class="fa fa-arrow-right"></em>
+      <div class="content">
+        <a href="/ja/press/how-cardano-transaction-fees-work/">カルダノの取引手数料はどうなっているか</a>
+      </div>
+    </div>
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    
+    
+    
+    
+  
+    
+    
+      
+</div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+    <section id="footer" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-24 col-md-24">
+        <div class="row">
+          <div class="col-md-6 col-xs-24">
+            <h4>コミュニティに参加する</h4>
+            <div class="social_icons" id="social_icons_home">
+              <a class="twitter" href="https://twitter.com/CardanoStiftung" target="_blank"><em class="fa fa-twitter"></em></a>
+              <a class="facebook" href="https://facebook.com/CardanoFoundation/" target="_blank"><em class="fa fa-facebook"></em></a>
+              <a class="reddit" href="https://reddit.com/r/cardano" target="_blank"><em class="fa fa-reddit"></em></a>
+              <a class="linkedin" href="https://www.linkedin.com/company-beta/11195856/" target="_blank"><em class="fa fa-linkedin"></em></a>
+              <a class="youtube" href="https://www.youtube.com/channel/UCbQ9vGfezru1YRI1zDCtTGg" target="_blank"><em class="fa fa-youtube-play"></em></a>
+              <a class="zoom-social_icons-list__link" href="https://chat.cardanohub.org/home" target="_blank" style="background: #fff;"><em class="fa fa-rocket" style="color:#c1272d;"></em></a>
+              <a class="zoom-social_icons-list__link" href="https://forum.cardanohub.org" target="_blank" style="background: #fff;">
+                <span class="zoom-social_icons-list-span dashicons dashicons-format-status" data-hover-rule="color" data-hover-color="#da7226" style="color : #da7226;font-size: 18px;padding:2px; vertical-align: middle;" data-old-color="rgb(255, 249, 174)"></span>
+              </a>
+            </div>
+            <p>
+              <a href="mailto:info@cardanofoundation.org">お問い合わせ</a>
+            </p>
+            <a href="https://cardanodocs.com">技術資料</a>
+          </div>
+
+          <div class="col-md-12 col-xs-24">
+            <h4>ニュースレター</h4>
+            <p class="subscribe-to-our-new">ニュースレターに登録し、財団の新情報を受け取る</p>
+            
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({ 
+    css: '',
+    portalId: '4268286',
+    formId: 'b9826147-5b89-4303-96de-2e46205a0aca'
+  });
+</script>
+
+<style type="text/css">
+  #label-firstname-b9826147-5b89-4303-96de-2e46205a0aca {
+    display: none;
+  }
+  #label-email-b9826147-5b89-4303-96de-2e46205a0aca, #label-language-b9826147-5b89-4303-96de-2e46205a0aca {
+    display: none;
+  }
+
+  .hs_firstname, .hs_email {
+    width: 49%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    /*font-size: 0;*/
+    max-width: 100%;
+  }
+
+  .hs_email {
+    float: right;
+  }
+
+  #email-b9826147-5b89-4303-96de-2e46205a0aca, #firstname-b9826147-5b89-4303-96de-2e46205a0aca {
+    width: 100%;
+    border: none;
+    background-color: #f7f7f7;
+    color: #a5a5a5!important;
+    font-family: Rubik;
+    font-size: 14.0px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  #language-b9826147-5b89-4303-96de-2e46205a0aca {
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    color: #5078BA;
+    background-color: #f7f7f7;
+    font-family: Rubik;
+    font-size: 14.0px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: 500;
+    display: inline-block;
+    height: 34px;
+    border-radius: 6px;
+    padding: 6px 11px;
+    line-height: 1.72857143;
+  }
+
+  .hs_language, .hs_error_rollup {
+    display: inline-block;
+    width: calc(100% - 135px);
+  }
+
+  .hs_submit {
+    width: 122px;
+    display: inline-block;
+  }
+
+  #footer form .hs_submit .hs-button {
+    width: 100%;
+    margin-left: 12px;
+    border: none;
+    background-color: #5079BB;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Rubik;
+    text-transform: uppercase;
+    border-radius: 6px;
+    line-height: 1.72857143;
+  }
+
+  .hs_error_rollup {
+    display: none;
+  }
+
+  .submitted-message {
+    text-align: center;
+  }
+</style>
+          </div>
+
+          <div class="col-md-6 col-xs-24" style="text-align: right;">
+            <img src="/images/footer-logo.png" alt="logo" style="margin-right: 10px;">
+            <img src="/images/footer-logo-text.png" height="" alt="Cardano Foundation">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-24">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      情報保護規約
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <ol>
+                    <li>個人データは公正かつ合法的に処理されるものとします。</li>
+                    <li>個人データは、1つまたは複数の指定された合法的な目的のために取得され、その目的またはその目的と両立しない方法でさらに処理されないものとします。</li>
+                    <li>個人データは、処理されるに関連して、適切で過度でない使用とします。</li>
+                    <li>個人データは正確で、必要に応じて最新のものとします。</li>
+                    <li>いかなる個人データは、必要とされる目的以上に長く保管されないものとします。</li>
+                    <li>個人データは、関連する法律の下でデータの権利に従って処理されるものとします。</li>
+                    <li>個人データの不正および不法な処理、ならびに偶発的な個人データの喪失または破壊または破損に対して、適切な技術的および組織的措置を講じなければならない。</li>
+                    <li>個人データは、当該国または地域が、個人データの処理に関連してデータ主体の権利と自由を十分に保護することを保証しない限り、その国または地域に移転してはならない。</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row copy-section">
+          <div class="col-xs-24">
+            <p class="copy-right">カルダノ財団は2016年9月13日にスイスで法人化しました。カルダノ財団オフィス：Cardano Stiftung, Gubelstrasse 11, 6300 Zug, Switzerland.</p>
+            <p class="copy-right" style="text-transform: uppercase;">&copy;2017 Cardano Foundation ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var trackcmp_email = "";
+    var trackcmp = document.createElement("script");
+    trackcmp.async = true;
+    trackcmp.type = "text/javascript";
+    trackcmp.src = "//trackcmp.net/visit?actid=251940219&e=" + encodeURIComponent(trackcmp_email) + "&r=" + encodeURIComponent(document.referrer) + "&u=" + encodeURIComponent(window.location.href);
+    var trackcmp_s = document.getElementsByTagName("script");
+    if (trackcmp_s.length) {
+        trackcmp_s[0].parentNode.appendChild(trackcmp);
+    } else {
+      var trackcmp_h = document.getElementsByTagName("head");
+      trackcmp_h.length && trackcmp_h[0].appendChild(trackcmp);
+    }
+  </script>
+</section>
+</div><!-- /#page -->
+
+<div class="modal fade noprint plainmodal" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="Videomodal">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="videoframe">
+          <iframe width="598" height="317" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade noprint plainmodal" id="iohk-modal" tabindex="-1" role="dialog" aria-labelledby="IOHK modal">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div id="iohk-modal-load"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  /*.hs-form-b9826147-5b89-4303-96de-2e46205a0aca_d5437811-dc0e-40a1-8859-c1462be81340 fieldset.form-columns-2 .input {
+    margin-right: 0px;
+  }
+  .hs-form-b9826147-5b89-4303-96de-2e46205a0aca_d5437811-dc0e-40a1-8859-c1462be81340.stacked label {
+    display: none;
+  }
+
+  .stacked label {
+    display: none!important;
+  }
+
+  .hs-error-msgs.inputs-list label {
+    display: block!important;
+  }*/
+</style>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4268286.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+  </body>
+</html>
+
